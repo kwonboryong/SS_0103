@@ -25,10 +25,26 @@ public class Ex09_Error {
 		- 난이도 중간 (발견 자체가 복불복임)
 
 		3. 논리 에러
+  		- 컴파일과 실행은 성공, 결과가 이상함
+		- 사용자 실수
+
+ 		int n1 = 10;
+ 		int n2 = 5;
 		
-		
-		
-		
+		 System.out.println(n1 - n2); 
+ 		// 덧셈(+)을 하려고 하는데 실수로 뺄셈(-)을 적음 => 논리 에러
+
+
+		에러 메세지
+
+		[Error: Exception in thread "main" java.lang.ArithmeticException: / by zero
+		at com.test.java.Ex09_Error.main(Ex09_Error.java:7)]
+
+		- ArithmeticException: 산술 에러
+
+		- / by zero: 0으로 나눔
+
+		- at com.test.java.Ex09_Error.main(Ex09_Error.java:7): 오류 위치
 		
 		*/ 
 		
@@ -39,8 +55,7 @@ public class Ex09_Error {
 		System.out.println(n1 - n2); 
 		// 덧셈(+)을 하려고 하는데 실수로 뺄셈(-)을 적음 => 논리 에러
 		
-		
-		
+
 		
 	}
 
